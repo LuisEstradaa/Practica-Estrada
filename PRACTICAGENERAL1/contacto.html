@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Encuesta sobre la Liga Pro</title>
+</head>
+<body>
+  <h1>Encuesta sobre la Liga Pro</h1>
+  <form action="procesar_formulario.php" method="POST">
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" required><br><br>
+
+    <label>Género:</label><br>
+    <input type="radio" id="masculino" name="genero" value="Masculino" required>
+    <label for="masculino">Masculino</label><br>
+    <input type="radio" id="femenino" name="genero" value="Femenino" required>
+    <label for="femenino">Femenino</label><br>
+    <input type="radio" id="otro" name="genero" value="Otro" required>
+    <label for="otro">Otro</label><br><br>
+
+    <label for="opinion">¿Cuál es tu opinión sobre la Liga Pro?</label><br>
+    <textarea id="opinion" name="opinion" required></textarea><br><br>
+
+    <label for="ciudad">¿A que equipo apoyas?</label>
+    <input type="text" id="ciudad" name="ciudad" required><br><br>
+
+    <label>¿Alguna ves has ido a apoyar a tu equipo favorito a su estadio?</label><br>
+    <input type="radio" id="si" name="noticias" value="Sí" required>
+    <label for="si">Sí</label><br>
+    <input type="radio" id="no" name="noticias" value="No" required>
+    <label for="no">No</label><br><br>
+
+    <label>¿Que prefieres para tu equipo?</label><br>
+    <select name="fuente" required>
+      <option value="Redes sociales">Que gane la copa libertadores pero que decienda de categoria</option>
+      <option value="Sitio web">Que gane la Liga Pro recien ascendido</option>
+      <option value="Recomendación de un amigo">Que mande al equipo rival al descenso</option>
+      <option value="Otro">Lleguen a la cima pero desaparecer en 5 años</option>
+    </select><br><br>
+
+    <label for="comentarios">¿Cambiarias el formato de reparticion de cupos a los torneos Conmebol?</label><br>
+    <textarea id="comentarios" name="comentarios"></textarea><br><br>
+
+    <label>¿Estás dispuesto/a a participar en futuras encuestas?</label><br>
+    <input type="radio" id="si2" name="futuras_encuestas" value="Sí" required>
+    <label for="si2">Sí</label><br>
+    <input type="radio" id="no2" name="futuras_encuestas" value="No" required>
+    <label for="no2">No</label><br><br>
+
+    <label for="informacion_adicional">¿Deseas agregar alguna información adicional?</label><br>
+    <textarea id="informacion_adicional" name="informacion_adicional"></textarea><br><br>
